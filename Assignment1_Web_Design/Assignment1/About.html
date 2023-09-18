@@ -1,0 +1,230 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOONUTS</title>
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+        @font-face {
+            font-family: 'ADLaM Display';
+            src: url('path/to/your/ADLaMDisplay.woff2') format('woff2'), url('path/to/your/ADLaMDisplay.woff') format('woff');
+        }
+
+        .my-custom-navbar {
+            background-color: #FFAEDF !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-family: 'ADLaM Display', sans-serif;
+            font-size: 20px; /* Adjust size as needed */
+        }
+
+        .navbar a {
+            font-size: 2rem;
+            margin-left: 2rem;
+            color: #666666;
+        }
+
+            .navbar a:hover {
+                color: #008080;
+            }
+    </style>
+</head>
+<body>
+    <!-- header section starts     -->
+    <!--<header class="header">
+        <section class="flex">
+            <a href="#" class="logo">
+                <img src="img/doononuts logo nobg.png" alt="Logo Image" width="150" height="50">
+            </a>
+            <nav class="navbar d-md-none" id="mobile-menu">-->
+    <!-- Hide on medium screens and up -->
+    <!--<a href="Index.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="About.html">About</a>
+        <a href="#Contact">Contact</a>
+    </nav>-->
+    <!-- This button will only be visible on smaller screens -->
+    <!--<div id="menu-btn" class="fas fa-bars d-md-none"></div>-->
+    <!-- Regular navigation visible on medium screens and up -->
+    <!--<nav class="navbar d-none d-md-block">
+                <a href="Index.html">Home</a>
+                <a href="Menu.html">Menu</a>
+                <a href="About.html">About</a>
+                <a href="#Contact">Contact</a>
+            </nav>
+        </section>
+    </header>-->
+
+
+
+    <nav class="navbar navbar-expand-lg my-custom-navbar">
+        <div class="container-fluid">
+            <a class="Doonut Logo" href="Index.html">
+                <img src="img/doononuts_logo_nobg.png" alt="Bootstrap" width="150" height="50">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- About Us header -->
+    <section class="about-header">
+        <!--<h2>About Us</h2>-->
+        <h2><span class="about-color-T">About</span> <span class="us-color-T">Us</span> </h2>
+    </section>
+
+    <!-- First Image -->
+    <section class="about-image">
+        <img src="img/about_banner.jpg" alt="First Image" />
+    </section>
+
+    <!-- First Article and Second Image -->
+
+    <section class="about-content">
+
+        <div class="about-article">
+            <article>
+                <h3>Who are we?</h3>
+                <p>
+                    Welcome to DOOONUTS - Your Destination for Irresistible Donuts!
+
+                    At DOOONUTS, we are passionate about crafting the most delectable donuts that will tantalize your taste buds and leave you craving for more. Our journey began with a simple mission: to create donuts that are not just sweet treats but moments of pure delight.
+                </p>
+            </article>
+        </div>
+        <div class="about-image-2">
+            <img src="img/donut_girl.jpg" alt="Second Image" style="width: 100%;max-width: 1200px;" />
+        </div>
+    </section>
+
+    
+
+
+    <!-- Second Article and Third Image -->
+    <section class="about-content">
+
+        <div class="about-article">
+            <article>
+                <h3>Our Mission</h3>
+                <p>
+                    At DOOONUTS, our mission is simple: to redefine the donut experience. We're dedicated to crafting quality donuts, sparking creativity, fostering community, and sweetening your life, one donut at a time.
+
+                    Join us on this journey of flavors, innovation, and connections. Discover the joy in every bite.
+                </p>
+            </article>
+        </div>
+        <div class="about-image-3">
+            <img src="img/donut_box.jpg" alt="Third Image" style="width: 100%;max-width: 1200px;" />
+        </div>
+    </section>
+
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>07:00am to 5:00pm</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone</h3>
+                <p>+111-111-1111</p>
+                <p>+222-222-2222</p>
+                <p>+222-222-2222</p>
+
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>B@gmail.com</p>
+                <p>T@gmail.com</p>
+                <p>N@gmail.com</p>
+
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>address</h3>
+                <p>Corner Batesford & Warrigal Roads, Chadstone, VIC, 3148</p>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit"> created by <span>Banish,Thanawat</span> | all rights reserved! </div>
+
+    </section>
+
+    <!-- footer section ends  -->
+    <script>
+        // Get references to the menu button and mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Add a click event listener to the menu button
+        menuBtn.addEventListener('click', () => {
+            // Toggle the 'active' class on the mobile menu to show/hide it
+            mobileMenu.classList.toggle('active');
+        });
+        // JavaScript to start the carousel and make it automatic
+        document.addEventListener('DOMContentLoaded', function () {
+            const myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+                interval: 2000, // Adjust the interval in milliseconds (e.g., 2000ms = 2 seconds)
+                pause: 'hover' // Pause on hover
+            });
+        });
+    </script>
+
+    <!-- food section starts  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

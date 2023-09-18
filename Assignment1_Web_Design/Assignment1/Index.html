@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOONUTS</title>
+    <!--bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+    <!-- custom css file link  -->
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+
+        @font-face {
+            font-family: 'ADLaM Display';
+            src: url('path/to/your/ADLaMDisplay.woff2') format('woff2'), url('path/to/your/ADLaMDisplay.woff') format('woff');
+        }
+
+        .my-custom-navbar {
+            background-color: #FFAEDF !important;
+        }
+
+        .navbar-nav .nav-link {
+            font-family: 'ADLaM Display', sans-serif;
+            font-size: 20px; /* Adjust size as needed */
+        }
+
+        .navbar a {
+            font-size: 2rem;
+            margin-left: 2rem;
+            color: #666666;
+        }
+
+            .navbar a:hover {
+                color: #008080;
+            }
+    </style>
+
+</head>
+<body>
+    <!-- Navbar section starts     -->
+
+    <nav class="navbar navbar-expand-lg my-custom-navbar">
+        <div class="container-fluid">
+            <a class="Doonut Logo" href="Index.html">
+                <img src="img/doononuts_logo_nobg.png" alt="donutlogo" width="150" height="50">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="About.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="Contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar section ends  -->
+    <!--Carousel Start here-->
+
+    <div class="container-fluid">
+
+        <div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/delicious-glazed-doughnuts-arrangement_(1).jpg" width="500" height="200" alt="First slide">
+                </div>
+
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/delicious-glazed-doughnuts-arrangement_(4).jpg" width="500" height="200" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/fruit-cake-with-chocolate-chips-blueberries.jpg" width="500" height="200" alt="Third slide">
+                </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+    </div>
+    <br />
+    <br />
+    <header class="Header_update">
+        <h1><span class="update-color">Update</span> <span class="zone-color">Zone</span></h1>
+    </header>
+    <div class="flex-container">
+        <!-- First Update Section -->
+        <div class="update-section">
+            <h2>Pokemon Donut <br> Is Arrived</h2>
+            <div class="circle-image">
+                <img src="img/pokemon_1.jpg" alt="Description 1" />
+            </div>
+            <p class="update-text">Catch 'em All... in your tummy! The Pikachu Pastries!</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Second Update Section -->
+        <div class="update-section">
+            <h2>Trick or Treat <br> Yo' Self!!</h2>
+            <div class="circle-image">
+                <img src="img/Halloween_1.jpg" alt="Description 2" />
+            </div>
+            <p class="update-text">Boo-nuts!! Don't be scared to take a bite.</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Third Update Section -->
+        <div class="update-section">
+            <h2>Dough Like a Boss! Donut Design Time!</h2>
+            <div class="circle-image">
+                <img src="img/Do_Nut_1.jpg" alt="Description 3" />
+            </div>
+            <p class="update-text">Your Taste, Your Masterpiece: Dive into DIY Donuts!</p>
+            <div class="underline"></div>
+        </div>
+    </div>
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+
+        <div class="icons-container">
+
+            <div class="icons">
+                <i class="fas fa-clock"></i>
+                <h3>opening hours</h3>
+                <p>07:00am to 5:00pm</p>
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-phone"></i>
+                <h3>phone</h3>
+                <p>+111-111-1111</p>
+                <p>+222-222-2222</p>
+                <p>+222-222-2222</p>
+
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-envelope"></i>
+                <h3>email</h3>
+                <p>B@gmail.com</p>
+                <p>T@gmail.com</p>
+                <p>N@gmail.com</p>
+
+            </div>
+
+            <div class="icons">
+                <i class="fas fa-map"></i>
+                <h3>address</h3>
+                <p>Corner Batesford & Warrigal Roads, Chadstone, VIC, 3148</p>
+            </div>
+
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit"> created by <span>Banish,Thanawat</span> | all rights reserved! </div>
+
+    </section>
+
+    <!-- footer section ends  -->
+
+
+    <script>
+        // Get references to the menu button and mobile menu
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        // Add a click event listener to the menu button
+        menuBtn.addEventListener('click', () => {
+            // Toggle the 'active' class on the mobile menu to show/hide it
+            mobileMenu.classList.toggle('active');
+        });
+        // JavaScript to start the carousel and make it automatic
+        document.addEventListener('DOMContentLoaded', function () {
+            const myCarousel = new bootstrap.Carousel(document.getElementById('myCarousel'), {
+                interval: 2000, // Adjust the interval in milliseconds (e.g., 2000ms = 2 seconds)
+                pause: 'hover' // Pause on hover
+            });
+        });
+    </script>
+
+    <!-- food section starts  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,535 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+
+@font-face {
+    font-family: 'ADLaM Display';
+    src: url('path/to/your/ADLaMDisplay.woff2') format('woff2'), url('path/to/your/ADLaMDisplay.woff') format('woff');
+}
+
+* {
+    font-family: 'ADLaM Display', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
+    text-transform: capitalize;
+}
+
+    * > img {
+        user-select: none;
+        pointer-events: none;
+    }
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+    html::-webkit-scrollbar {
+        width: 1rem;
+    }
+
+    html::-webkit-scrollbar-track {
+        background-color: #fff;
+    }
+
+    html::-webkit-scrollbar-thumb {
+        background-color: #008080;
+    }
+
+
+.carousel-inner img {
+    max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+    max-height: 100%; /* Ensure the image doesn't exceed its container's height */
+    width: auto; /* Allow the image to scale in width */
+    height: auto; /* Allow the image to scale in height */
+}
+
+#myCarousel {
+    margin-top: 40px;
+}
+
+section {
+    padding: 5rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.odd-section {
+    background-color: #f5f5f5;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+    .heading span {
+        font-size: 4.5rem;
+        color: #FD6DC4;
+    }
+
+    .heading h3 {
+        font-size: 2.5rem;
+        color: #222;
+    }
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    background: #FD6DC4;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+    .btn:hover {
+        letter-spacing: .2rem;
+    }
+
+
+/*.header {
+    font-family: 'ADLaM Display', cursive;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFAEDF;
+    z-index: 1000;
+}
+
+    .header .flex {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .logo {
+        font-size: 2.5rem;
+        font-weight: bolder;
+        color: #222;
+    }
+
+        .header .logo i {
+            color: #FD6DC4;
+            padding-right: .5rem;
+        }
+
+    .header .navbar a {
+        font-size: 2rem;
+        margin-left: 2rem;
+        color: #666666;
+    }
+
+        .header .navbar a:hover {
+            color: #008080;
+        }*/
+
+/*Custom header*/
+
+
+.my-custom-navbar {
+    background-color: #FD6DC4 !important;
+}
+
+.navbar-nav .nav-link {
+    font-family: 'ADLaM Display', sans-serif;
+    font-size: 20px; /* Adjust the size as needed */
+}
+
+
+#menu-btn {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: #222;
+    display: none;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: translateY(-4rem) scale(0);
+        opacity: 0;
+    }
+}
+
+/* Initially hide the mobile menu */
+#mobile-menu {
+    display: none;
+}
+
+    /* Style the mobile menu as needed */
+    #mobile-menu.active {
+        display: block;
+        /* Add other styles to position and style the menu */
+    }
+/* Update Part */
+.Header_update {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 20px 0;
+    font-family: 'ADLaM Display', cursive;
+    font-weight: 500;
+    font-size: 28px;
+}
+
+h2 {
+    font-family: 'ADLaM Display', cursive;
+    font-weight: 500;
+    color: #59D5B8;
+}
+
+    h2:hover {
+        color: #68F5D5;
+    }
+
+        .circle-image:hover ~ .underline,
+        h2:hover ~ .underline {
+            width: 100px; /* Extended width of the line when hovered */
+        }
+
+.update-color {
+    color: #ff4500; /* Color for the word "Update" */
+}
+
+.zone-color {
+    color: #008080; /* Color for the word "Zone" */
+}
+
+.flex-container {
+    display: flex; /* This makes the child divs display in a row */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin: 50px auto;
+    max-width: 1000px; /* Adjust as required */
+}
+
+.update-section {
+    text-align: center;
+    width: 30%; /* Roughly one-third width, adjust as needed */
+    box-sizing: border-box;
+    margin: 10px; /* Add some margin for spacing between sections */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-image img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.circle-image:hover {
+    filter: brightness(70%); /*Decreases the brightness of the image to 70% on hover, adding a shaded effect */
+}
+
+.update-text {
+    font-size: 16px;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+
+.underline {
+    height: 2px;
+    background-color: #000;
+    width: 50px;
+    margin: 20px auto;
+    transition: width 0.3s ease;
+}
+
+.circle-image:hover ~ .underline,
+.update-text:hover ~ .underline {
+    width: 100px;
+}
+
+.update-text {
+    font-family: 'ADLaM Display', cursive;
+    font-weight: 500;
+}
+
+
+.footer {
+    text-align: center;
+}
+
+    .footer .icons-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+    }
+
+        .footer .icons-container .icons {
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+            .footer .icons-container .icons i {
+                height: 6rem;
+                width: 6rem;
+                border-radius: 50%;
+                background: #68F5D5;
+                color: #fff;
+                margin-bottom: .5rem;
+                line-height: 5.8rem;
+                font-size: 2rem;
+            }
+
+            .footer .icons-container .icons h3 {
+                font-size: 2rem;
+                color: #222;
+                padding: 1rem 0;
+            }
+
+            .footer .icons-container .icons p {
+                line-height: 1.5;
+                font-size: 1.7rem;
+                color: #666;
+                text-transform: none;
+            }
+
+    .footer .share {
+        margin: 2rem 0;
+    }
+
+        .footer .share a {
+            height: 6rem;
+            width: 6rem;
+            line-height: 5.8rem;
+            color: #fff;
+            background: #222;
+            margin: 0 .3rem;
+            font-size: 2.5rem;
+        }
+
+            .footer .share a:hover {
+                background: #CB8E6E;
+            }
+
+    .footer .credit {
+        padding-top: 2.5rem;
+        margin-top: 3rem;
+        border-top: 1rem solid #aaa;
+        font-size: 2rem;
+        color: #666;
+    }
+
+        .footer .credit span {
+            color: #FD6DC4;
+        }
+
+
+
+@media (max-width:1200px) {
+
+    section {
+        padding: 3rem 2rem;
+    }
+}
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .home .slide .content h3 {
+        font-size: 15vw;
+    }
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .fa-times {
+        transform: rotate(180deg);
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background-color: #FFAEDF;
+        border-top: .1rem solid #aaa;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+        .header .navbar.active {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        }
+
+        .header .navbar a {
+            display: block;
+            margin: 2rem;
+        }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        top: initial;
+        bottom: 1rem;
+    }
+
+    .menu .slide .box-container .box {
+        flex-flow: column;
+        text-align: center;
+    }
+
+    .flex-container {
+        flex-direction: column; /* Stack sections vertically */
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .home .slide .content h3 {
+        font-size: 7rem;
+    }
+}
+
+@media (min-width: 768px) {
+    #myCarousel .carousel-inner .carousel-item img {
+        max-width: 100%;
+        max-height: 50vh; /* Adjust the value to your desired maximum height, using 'vh' units */
+        width: auto;
+        height: auto;
+    }
+}
+
+/* Style for the About Us header */
+.about-header {
+    text-align: left;
+    padding: 20px;
+    font-size: 50px;
+    /*background-color: #f5f5f5;*/
+}
+
+    .about-header h2 {
+        font-size: 28px;
+        color: #333;
+        margin: 0;
+    }
+
+/* Style for the images */
+.about-image img:first-child, img.responsive-img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.about-image-2 img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-image-3 img.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+}
+
+/* Style for the About content */
+.about-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; /* Align articles at the top */
+    padding: 20px;
+}
+
+.about-article:nth-child(odd) {
+    
+    padding: 20px;
+    width: 50%; /* Make the articles take up 50% of the width each */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.about-article {
+    flex: 1;
+    max-width: calc(100% - 15px); /* Maintain a maximum width for responsiveness */
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+    .about-article h3 {
+        font-size: 18px;
+        color: #333;
+        margin: 0;
+    }
+
+    .about-article p {
+        font-size: 16px;
+        /*color: #666;*/
+    }
+
+.about-color-T {
+    color: #ff4500; /* Color for the word "Update" */
+}
+
+.us-color-T {
+    color: #008080; /* Color for the word "Zone" */
+}
+
+/*<!-- Menu Card -->*/
+.card_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -10px;
+}
+
+.cardmenu {
+    flex: 0 0 calc(33.33% - 20px); /* Each card takes up one-third of the container width with a 20px margin between cards */
+    margin: 0 10px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%; /* Ensure the image doesn't exceed the width of the card */
+    height: 100%; /* Make the image take up the full height of its container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.row {
+    text-align: center;
+}
+
+
+.centered-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* or set the height as per your requirement */
+    text-align: center;
+}
